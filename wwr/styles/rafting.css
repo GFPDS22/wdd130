@@ -23,8 +23,8 @@ h1, h2 {
 
 header {
     display: flex;
-    flex-direction: center; 
-    align-items: flex-start; /* Alinha à esquerda */
+    flex-direction: row; 
+    align-items: center; /* Alinha à esquerda */
     justify-content: space-between;
     background-color: var(--secondary-color);
     padding: 15px 20px;
@@ -119,20 +119,20 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* .mission {
+/*.mission {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;  Adiciona um pequeno espaçamento entre as imagens 
-    max-width: 100%;  Garante que o section não ultrapasse os limites 
+    gap: 10px;  /* Adiciona um pequeno espaçamento entre as imagens 
+    max-width: 100%;  /* Garante que o section não ultrapasse os limites 
 } */
 
 .mission img {
     max-width: 100%; /* Garante que as imagens fiquem dentro da seção */
     height: auto;
     flex-grow: 1; /* Permite que as imagens se ajustem uniformemente */
-    object-fit: contain; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
 }
 
 /* Rodapé */
