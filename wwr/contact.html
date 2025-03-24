@@ -1,14 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <meta charset='utf-8'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta name="description" content="Contact White Water Rafting Adventures for inquiries, reservations, or suggestions. We're here to help you plan your next thrilling rafting experience!">
+    <meta name="author" content="Gustavo Freire Prata dos Santos">
+    <title>Contact Us - White Water Rafting Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+    <header>
+        <img src="images/z-raftingcompas.jpg" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+
+        <section class="contact-info">
+            <div class="contact-info-container">
+                <div class="info-text">
+                    <h2>Company Information</h2>
+                    <p><strong>Address:</strong> 123 River Run Rd, Rapids City, CO 80000</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.658741417002!2d-79.51722442502047!3d43.6968575711001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31002f0bb471%3A0x48c126e9731babbf!2sRiverside%20Run%20Club!5e0!3m2!1spt-BR!2sus!4v1742775417629!5m2!1spt-BR!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <figure>
+                    <img src="images/medium-shot-smiley-people-nature.jpg" alt="Smiling employee Sarah">
+                    <figcaption>Mike - Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kayaking-man.jpg" alt="Smiling employee Mike">
+                    <figcaption>Josh - Reservation Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kayaking-river-with-sunset.jpg" alt="Smiling employee Lisa">
+                    <figcaption>Lisa - Safety Specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="URL_DO_SERVIDOR_DE_PROCESSAMENTO" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <br/>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="form-actions">
+                    <label class="checkbox-label-align-left">
+                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    </label>
     
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="contact-us-wareframe"><a href="https://app.moqups.com/OFMTmCUJxSSlrUyBx21daaovR6oQikET/view/page/ad12de680">Contact Us wireframe</a></p>
+        <p>
+            &copy; 2025 White Water Rafting Adventures | Developed by Gustavo Freire Prata dos Santos
+        </p>
+        <div class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook_logo_icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_logo_icon.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram_icon.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

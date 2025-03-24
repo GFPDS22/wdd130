@@ -19,6 +19,7 @@ body {
 h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--primary-color);
+    padding-left: 2%;
 }
 
 header {
@@ -183,4 +184,200 @@ footer .sociallinks img {
 
 footer .sociallinks img:hover {
     transform: scale(1.1);
+}
+
+ /* Seção de Informações de Contato */
+ .contact-info {
+    background-color: #fff;
+    padding: 2%;
+    margin: 2% auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    height: 30%;
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 30%;
+}
+
+.contact-info .map {
+    flex: 1;
+    min-width: 60%;
+    height: 450px;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Seção da Equipe */
+.team {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.team h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-members figure {
+    margin: 10px;
+    text-align: center;
+}
+.team-members img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.team-members figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Seção do Formulário de Contato */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    max-width: 99%;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form label[for="message"],
+.form-group label {
+    margin-bottom: 5px;
+    margin-left: 15%;
+    font-weight: bold;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    width: 70%;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 90%;
+}
+
+.contact-form fieldset {
+    border: none;
+    text-align: left;
+    width: 70%;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+  }
+
+.checkbox-label-align-left {
+    margin: 0;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-us-wareframe a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.contact-us-wareframe a:hover {
+    color: var(--accent1-color);
 }
