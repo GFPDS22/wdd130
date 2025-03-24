@@ -16,7 +16,8 @@ body {
     padding: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--primary-color);
     padding-left: 2%;
@@ -32,8 +33,10 @@ header {
 
 /* Ajuste do Logo */
 .logo {
-    height: 50px; /* Reduzindo o tamanho do logo */
-    width: auto; /* Mantém a proporção da imagem */
+    height: 50px;
+    /* Reduzindo o tamanho do logo */
+    width: auto;
+    /* Mantém a proporção da imagem */
 }
 
 nav ul {
@@ -62,27 +65,32 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    text-align: center; 
+    text-align: center;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 600px;
 }
 
 .hero h1 {
     position: absolute;
     top: 20%;
-    left: 50%; 
-    width: 100%; /* Faz o fundo ocupar toda a largura da página */
+    left: 50%;
+    width: 100%;
+    /* Faz o fundo ocupar toda a largura da página */
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto transparente */
-    padding: 20px 0; /* Preenchimento vertical */
-    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fundo preto transparente */
+    padding: 20px 0;
+    /* Preenchimento vertical */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 /* Hero Article */
@@ -100,15 +108,18 @@ nav ul li a:hover {
 
 .hero article img {
     float: right;
-    width: 200px; /* Define um tamanho fixo quadrado */
+    width: 200px;
+    /* Define um tamanho fixo quadrado */
     height: 200px;
-    object-fit: cover; /* Garante que a imagem preencha o quadrado sem distorção */
+    object-fit: cover;
+    /* Garante que a imagem preencha o quadrado sem distorção */
     margin-left: 10px;
     border-radius: 50%;
 }
 
 /* Seções Informativas */
-.history, .adventures {
+.history,
+.adventures {
     max-width: 100%;
     margin: 40px auto;
     padding: 20px;
@@ -120,20 +131,27 @@ nav ul li a:hover {
 
 .history-content {
     display: flex;
-    align-items: center; /* Centraliza os elementos verticalmente */
-    justify-content: space-between; /* Distribui os elementos */
-    gap: 20px; /* Adiciona espaçamento entre os elementos */
+    align-items: center;
+    /* Centraliza os elementos verticalmente */
+    justify-content: space-between;
+    /* Distribui os elementos */
+    gap: 20px;
+    /* Adiciona espaçamento entre os elementos */
 }
 
 .history-content p {
-    flex: 1; /* Faz os parágrafos ocuparem o espaço disponível */
-    text-align: justify; /* Ajusta o texto para melhor leitura */
+    flex: 1;
+    /* Faz os parágrafos ocuparem o espaço disponível */
+    text-align: justify;
+    /* Ajusta o texto para melhor leitura */
 }
 
 .history-content img {
-    width: 22%; /* Reduz a largura da imagem */
+    width: 22%;
+    /* Reduz a largura da imagem */
     height: 130px;
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 5px;
+    /* Bordas arredondadas */
     display: block;
 }
 
@@ -186,8 +204,9 @@ footer .sociallinks img:hover {
     transform: scale(1.1);
 }
 
- /* Seção de Informações de Contato */
- .contact-info {
+/* Página contact us */
+/* Seção de Informações de Contato */
+.contact-info {
     background-color: #fff;
     padding: 2%;
     margin: 2% auto;
@@ -227,7 +246,7 @@ footer .sociallinks img:hover {
     min-height: 200px;
     border: 0;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Seção da Equipe */
@@ -239,19 +258,23 @@ footer .sociallinks img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .team h2 {
     color: var(--primary-color);
     margin-bottom: 15px;
 }
+
 .team-members {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .team-members figure {
     margin: 10px;
     text-align: center;
 }
+
 .team-members img {
     width: 150px;
     height: 150px;
@@ -259,6 +282,7 @@ footer .sociallinks img:hover {
     object-fit: cover;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .team-members figcaption {
     margin-top: 10px;
     font-weight: bold;
@@ -271,7 +295,7 @@ footer .sociallinks img:hover {
     max-width: 99%;
     margin: 40px auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -349,7 +373,7 @@ footer .sociallinks img:hover {
     align-items: center;
     width: 70%;
     margin-top: 10px;
-  }
+}
 
 .checkbox-label-align-left {
     margin: 0;
@@ -370,7 +394,7 @@ footer .sociallinks img:hover {
     background-color: var(--secondary-color);
 }
 
-.contact-us-wareframe a{
+.contact-us-wareframe a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -380,4 +404,75 @@ footer .sociallinks img:hover {
 
 .contact-us-wareframe a:hover {
     color: var(--accent1-color);
+}
+
+/* Página home */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home-grid .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.home-grid img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.newsletter {
+    background-color: #fff;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta a {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: var(--primary-color);
 }
