@@ -76,16 +76,16 @@
                 <br/>
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
                         General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
                         Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
@@ -94,11 +94,11 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <div class="form-actions">
-                    <label class="checkbox-label-align-left">
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    <label for="subscribe" class="checkbox-label-align-left">
+                        <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
                     </label>
     
-                    <button type="submit">Send Message</button>
+                    <button id="send-menssage" type="submit">Send Message</button>
                 </div>
             </form>
         </section>
