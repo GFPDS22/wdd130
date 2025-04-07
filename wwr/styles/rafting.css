@@ -476,3 +476,69 @@ footer .sociallinks img:hover {
 .cta a:hover {
     background-color: var(--primary-color);
 }
+
+.trip-intro {
+    text-align: center;
+    padding: 2%;
+}
+
+.trip-contact-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.trip-contact-cta:hover {
+    background-color: var(--accent1-color);
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.trip-table {
+    max-width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.trip-table th, .trip-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
